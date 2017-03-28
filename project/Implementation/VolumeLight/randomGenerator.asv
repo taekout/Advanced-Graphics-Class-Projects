@@ -1,0 +1,9 @@
+randNum1 = xlsread('randomNumber.xlsx');
+randNum2 = xlsread('randomNumber6.xlsx');
+randNum3 = xlsread('randomNumber2.xlsx');
+randNum4 = xlsread('randomNumber5.xlsx');
+randNum5 = xlsread('randomNumber3.xlsx');
+randNum6 = xlsread('randomNumber4.xlsx');
+
+
+randImg1 = zeros(3,

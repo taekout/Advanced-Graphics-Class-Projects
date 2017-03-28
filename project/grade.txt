@@ -1,0 +1,27 @@
+Taekyu Shin project grade
+
+ 2% * 100 Area selection
+ 3% * 100 Bibliography
+ 3% * 100 Idea
+ 4% * 100 Proposal
+ 4% * 100 Status
+ 4% *  98 Presentation
+10% *  95 Final project and paper [1]
+
+Notes:
+
+[1] You have a tendency to write long single-paragraph sections. It
+would help to organize them if you broke those up into a few
+coherent paragraphs. This is especially evident in the Related Work
+section.
+
+Your writing has some issues both structurally and in English
+language. I don't believe it's all the language though -- learning to
+write well takes time, but is worth it (even when I was at SGI, there
+were things I had to write for work). You should take advantage of the
+writing center for course papers like this. They won't do something
+like a Thesis, so plan to take a little more time on that, with
+plenty of revisions read by other readers. I've been doing this for a
+while, and I still do at least half a dozen full revisions on any
+paper I submit.
+

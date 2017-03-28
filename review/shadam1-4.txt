@@ -1,0 +1,35 @@
+Advanced Graphics review form -- modified from SIGGRAPH review form
+
+Reviewer Number: 
+Title: Deep Shadow Maps from Volumetric Data on the GPU
+Author: Adam Shook
+
+1) Briefly describe the paper and its contribution to computer  graphics and interactive techniques. Please give your assessment of the scope and magnitude of the paper's contribution
+
+The paper presents an adaptation of deep shadow map techniques to volumetric data. I was a bit unclear whether the unique contribution of this paper was the implementation using the GPU, or the application to volumetric datasets. Based on the related work and some quick searches, I assume both were new contributions from this paper? Assuming that is true, this is a very convenient and powerful technique. The implementation described in the paper seems limited to cubic volumes, which would significantly hamper the scope of application of this work.
+
+2) Is the exposition clear?  How could it be improved?
+
+The exposition is presented at a fairly high level, and the provided related work gives a good background for understanding the techniques presented in the paper. I did need to do a bit of additional background research to familiarize myself with some of the details of the technique, particularly with some of the terminology used. I think the description of the data structure used (to store 10%/50%/90% depths) could use a bit of additional clarification.
+
+3) Are the references adequate?  List any references that are needed.
+
+The related works provided give a pretty sufficient background necessary to understand the rest of the paper.  Some of the related work section seemed a bit unnecessary or unrelated, and could maybe be replaced with something more relevant.  The references in this section seem to cover a good mixture of seminal papers and more recent work. I am not personally aware of any other papers that were not mentioned that should have been.  A few references for some parts of the implementation might have been good to assert the correctness of the algorithm. A reference or two for the toolkits/packages you built on to make this would be nice too.
+
+4) Could the work be reproduced by one or more skilled graduate students?  Are all important algorithmic or system details discussed adequately?  Are the limitations and drawbacks of the work clear?
+
+The algorithm itself is clearly explained, at both a high and low level of detail. A more detailed explanation of the experimental method used in the results section would be good for comparison with future systems. Most of the drawbacks were pretty clear, but after reading, I was not entirely clear whether the limitation to cubic volumes was due to an inherent conflict with the algorithm, or an implementation detail that was just unresolved for the paper.
+
+5) Give an overall rating of the work and the paper on a continuous scale from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH review, this ranking is explained as 1 = Reject, 2 = Doubtful, 3 = Possibly accept, 4 = Probably accept, 5 = Accept).
+
+3
+
+6) Please rate your expertise in the subject area of the paper on a continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge, 3=Expert.
+
+2
+
+7) Explain your rating by discussing the strengths and weaknesses of the submission.  Include suggestions for improvement and publication venues, if appropriate. Be thorough -- your explanation may be used by the authors to improve their work. Be fair -- the authors spent a lot of effort to prepare their paper, and your evaluation will be returned to them.
+
+This technique, as I understood it, is pretty promising and a good contribution to the field.  However, some details need to be added on the potential advantages of this technique.  Also, the cubic volumes issue should be addressed before publishing this.
+
+Overall, the quality/style of the paper was good.  The writing style, organization and presentation were all satisfactory.  There were a few typos that should be edited out before publishing, but overall, well done.

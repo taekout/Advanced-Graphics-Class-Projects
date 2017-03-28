@@ -1,0 +1,46 @@
+Advanced Graphics review form -- modified from SIGGRAPH review form
+
+Title: Rendering Particles on a Shaft of Light
+Author: Taekyu Shin, Marc Olano
+
+1) Briefly describe the paper and its contribution to computer  graphics and interactive techniques. Please give your assessment of the scope and magnitude of the paper's contribution.
+
+- The paper describes a method of creating the illusion of shafts of light through the natural attenuation of light utilizing a probability distribution.  The probability distribution defines how many particles lie in space.  Users can manipulate the intensity, allowing for denser shafts of light.  The particles are isotropic but future work is described to extend the method for anisotropic particles.
+
+- The scope of the paper is reasonable given the time constraints for this project.  The method produces good results in a real time manner.
+
+
+2) Is the exposition clear?  How could it be improved?
+
+- More explanation could go into why the third figure was used.  I don't see the connection between the Gaussian sampling and how this relates to far particles having minor effects in rendering.
+- Minor spelling, grammatical, and formatting errors.
+- Figure 4 and 5's description has results A and C containing the same values in the probability function, yet different results.
+
+
+3) Are the references adequate?  List any references that are needed.
+
+- Yes.  Related works are well done.
+
+-- I did find one paper via Google that seems to be absent from the list of references -- A Fast Rendering Method for Shafts of Light in Outdoor Scene by Moro, Miyazaki, Dobashi, and Nishita.  Seems to be more related to outdoor scenes than shafts from actual geometry in a scene.
+
+
+4) Could the work be reproduced by one or more skilled graduate students?  Are all important algorithmic or system details discussed adequately?  Are the limitations and drawbacks of the work clear?
+
+- I definitely can be.  The algorithm is clearly presented, in addition to how the light is attenuated.  It is noted in the limitations that coming up with the probability distribution is not done on the fly and therefore inconvenient for end-users to figure out.  Some further work on making this more user-friendly, whether implemented quickly enough to be done on the fly or provide an application would be helpful.
+
+
+5) Give an overall rating of the work and the paper on a continuous scale from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH review, this ranking is explained as 1 = Reject, 2 = Doubtful, 3 = Possibly accept, 4 = Probably accept, 5 = Accept).
+
+- 3.0
+
+
+6) Please rate your expertise in the subject area of the paper on a continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge, 3=Expert.
+
+- 1.5
+
+
+7) Explain your rating by discussing the strengths and weaknesses of the submission.  Include suggestions for improvement and publication venues, if appropriate. Be thorough -- your explanation may be used by the authors to improve their work. Be fair -- the authors spent a lot of effort to prepare their paper, and your evaluation will be returned to them.
+
+- The proposed method is novel and simple enough to implement.  It accounts for attenuation of light based on particle distance and density.  This is a good contribution to computer graphics, as this is a phenomenon that is easily observable.  A probability distribution is a good method for accounting for different sized particles in space.  Given more time to look into improved methods for generating the probability distribution, preferably on the fly, would improve this paper.
+
+- Preparing a scene that can mimic a real life photograph would make this paper stronger.

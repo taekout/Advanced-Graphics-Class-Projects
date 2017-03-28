@@ -1,0 +1,44 @@
+Advanced Graphics review form -- modified from SIGGRAPH review form
+
+Reviewer Number: ???
+Title: Deep Shadow Maps from Volumetric Data on the GPU
+Author: Adam Shook
+
+1) Briefly describe the paper and its contribution to computer  graphics and interactive techniques. Please give your assessment of the scope and magnitude of the paper's contribution
+
+This paper describes a method to create Deep Shadow Maps from volumetric data using a GPU in shaders. The paper asserts that these deep shadow maps can be represented using a standard RGBA texture with the R G and B channels representing 10% opacity, 50% opacity, and 90% opacity respectively. The alpha value is then used for the maximum opacity value of the 3D volume data from the point of view of the light. The volume rendering is implemented by way of a shader-based ray casting algorithm within a cube. Once the deep shadow map is generated, the scene is then rendered from the camera's view, and shadowing is done as usual for DSMs.
+
+The paper's contribution is in-scope, as it focuses on an algorithm for generating deep shadow maps from volume data and using them in graphical renderings. The technique described in the paper is novel in that previous DSM from volumetric data algorithms that I can find seem to run much slower than the one described in this paper.
+
+
+2) Is the exposition clear?  How could it be improved?
+
+The exposition is pretty clear. I would suggest that sections be numbered, and potentially some sections should be divided into multiple subsections for further clarity. Two suggestions come to mind though, in relation to this, which will be discussed further in section 7.
+
+
+3) Are the references adequate?  List any references that are needed.
+
+One specific reference I would have liked to have seen is a paper from Graphics Hardware '06 entitled "GPU-accelerated deep shadow maps for direct volume rendering". This particular paper seems to deal directly with the same subject matter as Mr. Shook's paper, and is actually the top result on google for the query "deep shadow maps on volume data". The approach taken by the authors of the GH'06 paper seems to be quite similar to Mr. Shook's approach, but at the same time their results are much less impressive in speed. A comparison as to why this is would be much appreciated.
+
+The particular paper referenced is available online at the following URL:
+http://gmsv.kaust.edu.sa/people/faculty/hadwiger/hadwiger_pdf/graphicsHardware06.pdf
+
+
+4) Could the work be reproduced by one or more skilled graduate students?  Are all important algorithmic or system details discussed adequately?  Are the limitations and drawbacks of the work clear?
+
+I do believe that the work could be reproduced, as the algorithm is well explained in the Implementation section of the paper. Also, the paper does discuss some limitations and drawbacks of the approach taken in both the Results and Future Work section.
+
+
+5) Give an overall rating of the work and the paper on a continuous scale from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH review, this ranking is explained as 1 = Reject, 2 = Doubtful, 3 = Possibly accept, 4 = Probably accept, 5 = Accept).
+
+3.5
+
+
+6) Please rate your expertise in the subject area of the paper on a continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge, 3=Expert.
+
+2.4
+
+
+7) Explain your rating by discussing the strengths and weaknesses of the submission.  Include suggestions for improvement and publication venues, if appropriate. Be thorough -- your explanation may be used by the authors to improve their work. Be fair -- the authors spent a lot of effort to prepare their paper, and your evaluation will be returned to them.
+
+There are a few areas where I could suggest some improvements to this paper. The first, and easiest of these, is the fact that the justification of the text seems to be broken on the first paragraph of the second page. A small issue, but it does catch the eye when the rest of the paper is justified properly. Additional reasoning on why the 10%, 50%, and 90% thresholds were selected would also be appreciated, as I do not believe this is fully explained by the paper. At one point, a list of steps is referred to as "pseudocode" by the paper, however it does not appear to be pseudocode, but rather just a list of steps. I'd reword that a bit, rather than calling it a pseudocode segment. Finally, I was a bit confused by the two lists of steps on page 3. I think additional explanation is due before the second list, as I was left somewhat confused by what that list of steps was referring to on the first read of this paper. On a second reading, I am led to believe it is the steps to actually render the data with the deep shadow map, but as I said this is not entirely clear from the earlier context in the paper.

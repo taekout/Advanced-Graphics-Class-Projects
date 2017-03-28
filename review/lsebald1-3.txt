@@ -1,0 +1,71 @@
+Advanced Graphics review form -- modified from SIGGRAPH review form
+
+Reviewer Number: Un-Informed
+Title: OptiX-based Raytracing with Volumetric Effects
+Author: Lawrence Sebald
+
+1) Briefly describe the paper and its contribution to computer
+graphics and interactive techniques. Please give your assessment of
+the scope and magnitude of the paper's contribution.
+
+This paper presents a technique that can render a volumetric foggy
+effect by using the OptiX libraries and the TEA noise function. I
+believe that this work can be useful in a sense that OptiX was
+combined with other techniques such as a noise function.
+
+2) Is the exposition clear?
+
+The exposition is clear, but the paper contains too much irrelevant
+materials. Some brief explanation of GPU history and concepts would be
+enough. In Abstract and the Introduction, it takes more than 50% of
+the space to just explain the history and basic concepts.
+
+3) Are the references adequate?
+
+It seems to hit enough important works regarding noise and GPU.
+
+4) Could the work be reproduced by one or more skilled graduate
+students? Are all important algorithmic or system details discussed
+adequately? Are the limitations and drawbacks of the work clear?
+
+I believe that it contains enough for graduate students to reproduct
+the work. The implementation details are well described. The
+limitation is clear. However, the reason for the limitation seems
+rather unclear.
+
+5) Give an overall rating of the work and the paper on a continuous
+scale from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH
+review, this ranking is explained as 1 = Reject, 2 = Doubtful, 3 =
+Possibly accept, 4 = Probably accept, 5 = Accept).
+
+3
+
+6) Please rate your expertise in the subject area of the paper on a
+continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge,
+3=Expert.
+
+2
+
+7) Explain your rating by discussing the strengths and weaknesses of
+the submission. Include suggestions for improvement and publication
+venues, if appropriate. Be thorough -- your explanation may be used by
+
+How could it be improved?
+
+List any references that are needed.
+
+the authors to improve their work. Be fair -- the authors spent a lot
+of effort to prepare their paper, and your evaluation will be returned
+to them.
+
+Although I see why the author tried to use TEA noise function, I
+believe that it would make more sense to use different noise functions.
+Well distributed noise does not necessarily mean better in my opinion.
+The goal for a noise function can be well distributed, but it should
+have anisotropic pattern. I believe that the author could have used
+some other noise function to tweak the volumetric effects, which can
+look nicer. It could also provide end-users a good interface to play
+around the real-time effects. I think that High Performance Graphics
+should be a good place to submit. Using the noise function may not be
+very new, however, it can be a good material for the conference given
+that the noise function is used together with the OptiX.

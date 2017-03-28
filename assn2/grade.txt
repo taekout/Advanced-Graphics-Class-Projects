@@ -1,0 +1,37 @@
+Taekyu Shin
+Grade for Assignment 2: Shading
+
+   5/  5% Successful Mercurial submission
+  10/ 10% Descriptive readme
+  10/ 10% Show and tell
+  15/ 20% Identified important shading characteristics [1]
+  15/ 20% Shaders capture surface color [2]
+  20/ 20% Functional and appropriate lighting
+   5/ 15% Difficulty of material and creativity [3]
+======
+  80/100% Total
+
+Notes: 
+
+[1] Certainly, the anisotropic shading is important, but the
+individual threads are also very visible and an important part of the
+appearance. The threads coming off of the ball are pretty significant
+too. 
+
+[2] You got the anisotropic shading, but not the threads, or other
+variations in surface color.
+
+[3] If you'd managed your own implementation of an anisotropic shading
+model, I might have been willing to accept that alone. Since you used
+the one provided by RenderMonkey, I would expect you to have gone
+considerably further modeling other aspects of the appearance.
+
+Other notes: You don't need texture to implement these models
+anymore. These references are from 10 years ago, and graphics hardware
+has advanced quite a bit since then. They used textures and other
+tricks because GPU shaders didn't exist. Now it should be just a
+couple of lines of code. Note that you do need at least one surface
+tangent vector as well as the surface normal. For an object as simple
+as a sphere, you can just project the sphere axis onto the tangent
+plane to get a good consistent tangent vector aligned with the thread
+direction.

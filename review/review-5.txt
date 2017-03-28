@@ -1,0 +1,45 @@
+Advanced Graphics review form -- modified from SIGGRAPH review form
+
+Reviewer Number: 
+Title: Rendering Particles in a Shaft of Light
+Author: Taekyu Shin
+
+1) Briefly describe the paper and its contribution to computer  graphics and interactive techniques. Please give your assessment of the scope and magnitude of the paper's contribution
+
+This paper presented a technique for rendering particle effects such as fog and shafts of light. It also provides for attenuation at the edge of the light volume. A user controllable probabiliy function allows the user to control the intensity of the scattering effect. This technique uses a ray marching approach to determine how many particles are visible and sums up the resulting light intensity.
+
+The scope and magnitude of the project was perfect for the class project. It is an original contribution and demonstrates the authors knowledge of the subject area.
+
+
+2) Is the exposition clear?  How could it be improved?
+
+This is the main area where the paper is lacking. The wording definatly needs to be improved. There are also grammatical errors and some spelling errors. Without knowing a lot about the background material I did not completely follow how the entire implementation works. 
+
+3) Are the references adequate?  List any references that are needed.
+
+The list of references was extensive. While I do not have enough background in the area to judge whether or not the author included all of the relevant background, it does appear that the author has done an adquate ammount of research and understands the related works.
+
+4) Could the work be reproduced by one or more skilled graduate students?  Are all important algorithmic or system details discussed adequately?  Are the limitations and drawbacks of the work clear?
+
+Limitations and future work are clear. An overview of the algorithm and the important equations are given. The source the author used as a foundation for his implementation is given. I think a couple of grad students could reproduce this work.
+
+5) Give an overall rating of the work and the paper on a continuous scale from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH review, this ranking is explained as 1 = Reject, 2 = Doubtful, 3 = Possibly accept, 4 = Probably accept, 5 = Accept).
+
+In terms of the actual work itself I would give it a 4. But in terms of the paper, 2. Please see below for an explanation.
+
+The technique itself is original large enough in scope. However, the author does not provide any 
+performance benchmarks. 
+
+In terms of the actual written paper I would not accept it if I were a SIGGRAPH reviewer. The paper itself is difficult to follow because the english wording and grammar needs to be improved. I understand english may not be your first language and thats ok. But if that is the case then I highly recommend getting someone to proof read and help you fix up the wording so it is easier to understand.
+
+6) Please rate your expertise in the subject area of the paper on a continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge, 3=Expert.
+
+2 - some knowledge
+
+7) Explain your rating by discussing the strengths and weaknesses of the submission.  Include suggestions for improvement and publication venues, if appropriate. Be thorough -- your explanation may be used by the authors to improve their work. Be fair -- the authors spent a lot of effort to prepare their paper, and your evaluation will be returned to them.
+
+The reason I would say a 4 for the actual work and not a 5 is because there are no performance benchmarks. It would also be helpful to provide an image comparison with one of the previous works to immediatly show users what your new technique provides. I think this is really good research and solid idea, espesially for the short ammount of time in the class. I think you did a great job, it just needs to be tweaked a little bit.
+
+Now the reason why I gave a low ranking of 2 for the actual paper is because of the english. I choose a 2 because there is no way the paper would get accepteed to SIGGRAPH or another journal without significant improvements to the wording, grammar, and spelling. This is very easy to fix though, get someone to proof read the paper and help you fix the errors. 
+
+You did some awesome work! After cleaning up the english and adding some performance data, I would not hesitate to give this paper a score of 5.

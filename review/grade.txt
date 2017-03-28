@@ -1,0 +1,30 @@
+Taekyu Shin review grade: 75/100
+
+You have some specific complaints about the choice of noise function
+in the Sebald paper, but don't suggest any concrete alternative. If
+you are going to make this kind of suggestion in a review, you need to
+also give some examples (= references!) to alternative functions the
+authors should consider instead. Otherwise, you have not backed up
+your comment with any evidence that it could be realistically
+addressed -- if anisotropic noise were not computationally feasible
+but isotropic noise were, the comment about preferring anisotropic
+noise is effectively meaningless. On the other hand, if it is feasible
+at similar cost, maybe it is something the authors should have
+considered, but you bear some responsibilty to back up your review.
+
+The review for the Shook paper also contains some negative comments
+without support. You mention the size of 3D textures, but most volume
+rendering uses 3D textures, and this method won't significantly
+increase the memory use. Also, modern GPUs have a fair amount of
+memory, so it seem unlikely that memory would be a problem. The
+rendering cost is proportional to traditional volume rendering, so I
+would not expect it to increase substantially with the complexity.
+
+Especially with negative comments, you HAVE to provide good arguments
+supporting them, both to convince the other reviewers or the committee
+members that the paper should not be accepted if you think it should
+not, and ot provide feedback that the author's will actually listen
+to. If you make negative comments without that strong supporting
+argument, the authors are likely to just ignore your review. The same
+is true for positive reviews -- you need to support your position on
+the paper with well argued facts, not just statements.

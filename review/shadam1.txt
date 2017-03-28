@@ -1,0 +1,76 @@
+Advanced Graphics review form -- modified from SIGGRAPH review form
+
+Reviewer Number: Un-Informed
+Title: Deep Shadow Maps from Volumetric Data on the GPU
+Author: Adam J. Shook
+
+1) Briefly describe the paper and its contribution to computer
+graphics and interactive techniques. Please give your assessment of
+the scope and magnitude of the paper's contribution
+
+The deep shadow map(DSM) technique with a 3D texture is presented. I
+believe that it can be useful in a sense that the same technique(DSM),
+but a little different approach was attempted. However, I am not
+particularly sure what this technique is supposed to have in terms of
+quality compared to the original deep shadow map technique.
+
+2) Is the exposition clear?
+
+I think that the exposition is clear and well-organized.
+
+3) Are the references adequate?
+
+It seems to have only works that are directly correlated. It would not
+be worse if there were some seminal papers in that area. Also, it is
+good to indicate some recent works and compare them with this work.
+For example, DSM techniques are rather based on depth maps. It would
+be better to include works based on geometry such as Ulf Assarsson‘s
+‘A Geometry-based Soft Shadow Volume Algorithm using Graphics
+Hardware.’
+
+Also, I see some related works. However, I do not see his/her own
+opinion on the related works. It seems to simply explain the details
+of the previous/relevant techniques.
+
+4) Could the work be reproduced by one or more skilled graduate
+students? Are all important algorithmic or system details discussed
+adequately? Are the limitations and drawbacks of the work clear?
+
+Yes, I think that it is more than being enough. The description is
+very thorough.
+
+5) Give an overall rating of the work and the paper on a continuous
+scale from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH
+review, this ranking is explained as 1 = Reject, 2 = Doubtful, 3 =
+Possibly accept, 4 = Probably accept, 5 = Accept).
+
+3.
+
+6) Please rate your expertise in the subject area of the paper on a
+continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge,
+3=Expert.
+
+How could it be improved?
+
+List any references that are needed.
+
+1.
+
+7) Explain your rating by discussing the strengths and weaknesses of
+the submission. Include suggestions for improvement and publication
+venues, if appropriate. Be thorough -- your explanation may be used by
+the authors to improve their work. Be fair -- the authors spent a lot
+of effort to prepare their paper, and your evaluation will be returned
+to them.
+
+I think that it is fairly similar to the previous techniques. I am
+wondering how much space this technique takes because it uses a 3D
+texture. I am also wondering if it may cause some serious slow-down if
+this technique applies to a complex geometry and many complicated
+objects. I gave this 3 also because the related works may need some
+revision. However, in terms of everything else, I am convinced that it
+can bring some insight in the field because it delivers a visually
+pleasing result and seems that it can apply to many different objects
+without hassles. I personally like the approach very much as well. In
+conclusion, the result is convincingly pleasing versatile in my
+opinion so it deserves acceptance.

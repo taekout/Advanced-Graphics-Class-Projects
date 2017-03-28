@@ -1,0 +1,73 @@
+Advanced Graphics review form -- modified from SIGGRAPH review form
+
+Reviewer Number:
+Title: OptiX-based Raytracing with Volumetric Effects
+Author: Lawrence Sebald
+
+1) Briefly describe the paper and its contribution to computer graphics
+and interactive techniques. Please give your assessment of the scope and
+magnitude of the paper's contribution
+
+The paper contributed to computer graphics by improving existing pseudorandom
+number generation on the GPU, and using that to create noise-based volumetric
+effects. The scope of the paper is very applicable to today’s research
+in computer graphics. This is a good topic to explore and is a useful
+contribution to the field.
+
+2) Is the exposition clear?
+
+Details of the implementation are described clearly and it is easy to read.
+The author made it clear what the tutorial he started with gave him, and what
+his contribution was. This is well-written and I do not have suggestions to
+improve clarity.
+
+3) Are the references adequate?
+
+The references are adequate.
+
+4) Could the work be reproduced by one or more skilled graduate students?
+Are all important algorithmic or system details discussed adequately? Are
+the limitations and drawbacks of the work clear?
+
+This work could definitely be reproduced by a graduate student. The
+techniques are described well and code is provided. The limitations and
+the drawbacks are clear. There was a performance decrease as step sizes
+decreased, as to be expected. The author states improvements could be made
+in voxel traversal and random number generator initialization, leaving room
+for further research to be done.
+
+How could it be improved?
+
+List any references that are needed.
+
+5) Give an overall rating of the work and the paper on a continuous scale
+from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH review, this
+ranking is explained as 1 = Reject, 2 = Doubtful, 3 = Possibly accept, 4 =
+Probably accept, 5 = Accept).
+
+4
+
+6) Please rate your expertise in the subject area of the paper on a
+continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge, 3=Expert.
+
+2
+
+7) Explain your rating by discussing the strengths and weaknesses of the
+submission. Include suggestions for improvement and publication venues, if
+appropriate. Be thorough -- your explanation may be used by the authors to
+improve their work. Be fair -- the authors spent a lot of effort to prepare
+their paper, and your evaluation will be returned to them.
+
+The scope of this paper was very appropriate and provides a well-detailed,
+simple technique for pseudorandom number generation and volumetric effects.
+The results clearly show that the desired goal was achieved to some extent,
+although there were admittedly some limitations with the fog effects. These
+limitations could be resolved with future work and I suggest continuing
+working on this project. Perhaps a demonstration of other volumetric effects
+such as smoke and dust would have really strengthened this method as a viable
+option for a graphics programmer to implement any kind of volumetric effect
+in a GPU-based ray tracer. Also, a different scene, such as a swamp with
+foggy ground would have made the fog stand out more against the environment.
+This is not a weakness as the author was focused on the implementation rather
+than scene-building, but merely a suggestion of how I pictured this effect
+could be best shown-off.

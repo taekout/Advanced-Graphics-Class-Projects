@@ -1,0 +1,47 @@
+Advanced Graphics review form -- modified from SIGGRAPH review form
+
+Reviewer Number: 
+Title: Rendering Particles in a Shaft of Light
+Author: Taekyu Shin
+
+1) Briefly describe the paper and its contribution to computer  graphics and interactive techniques. Please give your assessment of the scope and magnitude of the paper's contribution
+
+The paper describes a lighting technique targeted at rendering the natural behavior of bright beams of light through air with a distribution of particles.  The technique presented here is based on natural physical principles and attempts to render these effects in a more natural/realistic looking fashion.
+
+The technique is based on well established methods and laws from computer graphics and the physics of light.  The implementation presented is also very feasible for inclusion in other existing projects.
+
+The potential scope of the project as presented seems fairly narrow, but from my understanding the techniques presented in this paper could be easily extended to a number of other problems, which could make this paper a good contribution to research in other kinds of volume illumination.
+
+2) Is the exposition clear?  How could it be improved?
+
+The high-level explanation of the technique is well organized and well presented.  The implementation details are similarly well done.  I appreciated the way the equations were handled, as most of the variables were explained individually before the equation itself was discussed.
+
+The discussion of the methods used to conduct the experiments/analysis of the method could use more detail, in order to allow future researchers to repeat your work and compare theirs with yours.
+
+3) Are the references adequate?  List any references that are needed.
+
+Certainly.  The related work section is probably too long if anything, and everything in this section is nicely referenced.  Even in the implementation section, particular methods are referenced from their original papers.
+
+The only place where I would consider adding some more references would be the Method Justification section.  If you are going to include this reasoning/justification about your method, you probably need to appeal to authority and cite some references which show why this method is correct.
+
+I am not aware of any other critical papers for which a reference is missing.
+
+4) Could the work be reproduced by one or more skilled graduate students?  Are all important algorithmic or system details discussed adequately?  Are the limitations and drawbacks of the work clear?
+
+The implementation is fairly well explained, as I stated above.  I am not personally familiar enough with the systems used to implement this to reproduce it based on the paper, but I am reasonably certain that no additional details were reasonably needed to be included in the paper.  As I mentioned above, the experimental/analysis components of the work could use some additional details.
+
+The limitations are made pretty explicit in the paper, although the discussion of each limitation was a bit sparse: I wasn't really sure what about the technique caused each limitation and which limitations were inherent to the approach and which could possibly be addressed in future work.
+
+5) Give an overall rating of the work and the paper on a continuous scale from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH review, this ranking is explained as 1 = Reject, 2 = Doubtful, 3 = Possibly accept, 4 = Probably accept, 5 = Accept).
+
+3.9
+
+6) Please rate your expertise in the subject area of the paper on a continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge, 3=Expert.
+
+1
+
+7) Explain your rating by discussing the strengths and weaknesses of the submission.  Include suggestions for improvement and publication venues, if appropriate. Be thorough -- your explanation may be used by the authors to improve their work. Be fair -- the authors spent a lot of effort to prepare their paper, and your evaluation will be returned to them.
+
+I think the technique presented here has a lot of promise and is well implemented and well presented. There are some additional details needed before I would consider this ready for publishing, but I think they could be produced fairly quickly. For one, the results section needs to be expanded upon.  Primarily, more experiments/results and some comparison to other existing methods would help show the advantages of this system, as well as make it easier to compare future work to this paper.  This paper also needs some thorough editing to improve readability in many places.  The language is normally clear enough, but if this was going to be published, you should get someone to edit it for you, it would go a long way for the readability.
+
+I feel like 3.9 is maybe a little low.  The work done and the ideas in this paper are quite good, but there is some work to be done before this would be accepted, I think.

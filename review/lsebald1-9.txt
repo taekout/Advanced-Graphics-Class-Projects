@@ -1,0 +1,28 @@
+Reviewer Number: TH-1
+Title: OptiX-Based Ray tracing with volumetric Effects
+Author: Lawrence Sebald
+
+1) Briefly describe the paper and its contribution to computer  graphics and interactive techniques. Please give your assessment of the scope and magnitude of the paper's contribution
+The paper has two main contributions. It describes a pseudo-random number generation based on Tiny Encryption Algorithm and to improve it across multi-GPUs in a way that each GPU generates a unique stream of PRN.
+It also explores the use of noise based on the generated PRN to produce simple volumetric effects in an OptiX ray tracer.
+It could be a very small but significant, although not ground breaking contribution.
+
+2) Is the exposition clear?  How could it be improved?
+The exposition is reasonably clear. The nomenclature of CUDA implementation code took little time to grasp, so althogh fairly obvious, could be explained a bit.
+
+3) Are the references adequate?  List any references that are needed.
+Yes. References are adequate.
+
+4) Could the work be reproduced by one or more skilled graduate students?  Are all important algorithmic or system details discussed adequately?  Are the limitations and drawbacks of the work clear?
+The work is quite clear and to the point and details are mentioned where required. It can be definitely implemented by skilled Graduate student/s.
+
+5) Give an overall rating of the work and the paper on a continuous scale from 1 to 5, where 1 is worst and 5 is best. (In the SIGGRAPH review, this ranking is explained as 1 = Reject, 2 = Doubtful, 3 = Possibly accept, 4 = Probably accept, 5 = Accept).
+3.6 .
+
+6) Please rate your expertise in the subject area of the paper on a continuous scale from 1 to 3, where: 1=Novice, 2=Some Knowledge, 3=Expert.
+2
+
+7) Explain your rating by discussing the strengths and weaknesses of the submission.  Include suggestions for improvement and publication venues, if appropriate. Be thorough -- your explanation may be used by the authors to improve their work. Be fair -- the authors spent a lot of effort to prepare their paper, and your evaluation will be returned to them.
+It seems like a very innovative direction of research. Use of TEA for creating PRNs is a very impressive idea. Choosing OptiX for creating volumetric fog effects using ray tracing, was a good idea, given the capabilities and limitations of OptiX. it suited perfect for the implementation.
+Using modified TEA for generating PRNs and on multiple streams is clearly mentioned, but the performance comparison after using it in generating fog, could be included. (As in performance of fog with and without the TEA PRNs) The reason why and when the Modified TEA PRNs are better than others could be exemplified with performance comparisons with other approaches.
+The drawbacks of using this method, are not mentioned and are worth mentioning.

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7376fbbb-7c78-4f7a-8a8d-42a2db64ae8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Items">
+      <UniqueIdentifier>{b4dff8a4-1a74-4eb2-8497-05d3aeed3dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media Files">
+      <UniqueIdentifier>{5fc5452b-b119-4ad6-899d-437a66415a5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VolumeLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VolumeLight.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Items</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="VolumeLight.manifest">
+      <Filter>Resource Items</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VolumeLight.rc">
+      <Filter>Resource Items</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Media\VolumeLight\BARK5.jpg">
+      <Filter>Media Files</Filter>
+    </None>
+    <None Include="..\..\Media\directx.ico">
+      <Filter>Media Files</Filter>
+    </None>
+    <None Include="..\..\Media\VolumeLight\DRIFTWD.jpg">
+      <Filter>Media Files</Filter>
+    </None>
+    <None Include="..\..\Media\VolumeLight\GRYDIRT1.jpg">
+      <Filter>Media Files</Filter>
+    </None>
+    <None Include="..\..\Media\VolumeLight\shed.sdkmesh">
+      <Filter>Media Files</Filter>
+    </None>
+    <None Include="..\..\Media\VolumeLight\WHTPLANK.jpg">
+      <Filter>Media Files</Filter>
+    </None>
+    <None Include="VolumeLight.fx">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

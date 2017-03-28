@@ -1,0 +1,20 @@
+Taekyu Shin
+Grade for Assignment 1: Accelerate a simple ray tracer
+
+   5/  5% Successful Mercurial submission
+   5/  5% Descriptive readme
+  10/ 10% Speedups reported
+  20/ 20% Attempted legitimate speedup method
+      	  Uniform grid, shadow intersections, threading
+  24/ 30% Geometric completeness (Runs balls, gears, mount, tetra & tree)
+      	  No cones
+   9/ 10% Algorithmic completeness
+      	  Precision problems with grid cell boundaries
+  10/ 10% Achieved speedup
+  10/ 10% Speedup ranking in class
+======
+  93/100% Total
+
+Nice shadow optimization to check multiple recent hits. The
+traditional optimization just keeps a one-hit buffer, so would be more
+prone to have to do the full search near object boundries.
